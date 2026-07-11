@@ -11,12 +11,23 @@
     border-radius: 5px;
     font-weight: 600;
 }
-
+.outline-btn {
+    background-color: #ffffff;
+    color: #1d43d8;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
+.speaker-up h1, .pricing-up h1{
+    font-weight: 800;
+    font-size: 3rem;
+}
 
+/* navbar section start */
 nav {
     display: flex;
     justify-content: space-between;
@@ -84,6 +95,9 @@ nav {
 /* hero section end */
 
 /* speaker section start */
+.speaker-section{
+    padding-bottom: 80px;
+}
 .speaker-up{
     display: flex;
     justify-content: center;
@@ -113,3 +127,41 @@ nav {
     text-transform: uppercase;
 }
 /* speaker section end */
+
+/* pricing section start */
+.pricing-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.pricing-down{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-bottom: 80px;
+}
+.price-card{
+    border: 1px solid burlywood;
+    border-radius: 15px;
+    padding: 20px;
+}
+.price-card button{
+    margin-left: 25px;
+    padding: 10px 70px;
+}
+.price-card-2 {
+    background-color: #0D1B2A;
+    color: #ffffff;
+}
+#pro-id{
+    color: #93C5FD;
+}
+.price-card h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+/* pricing section end */
