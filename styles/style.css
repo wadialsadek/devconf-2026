@@ -81,3 +81,35 @@ nav {
     font-size: 1.5rem;
     border-radius: 20px;
 }
+/* hero section end */
+
+/* speaker section start */
+.speaker-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+.speaker-down{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 20px;
+}
+.speaker{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 10px;
+}
+.speaker img{
+    border-radius: 15px 15px 0px 0px;
+}
+.speaker small{
+    color: #2563EB;
+    text-transform: uppercase;
+}
+/* speaker section end */
