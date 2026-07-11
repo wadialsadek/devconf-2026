@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    font-family: "Inter" , sans-serif;
+}
+/* Common styles */
+.common-btn{
+    background-color: #1d43d8;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;!important
+}
+
+.nav-middle ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.nav-middle li {
+    list-style-type: none;
+}
+.nav-middle a{
+    text-decoration: none;
+    color: #575757;
+}
