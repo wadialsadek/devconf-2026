@@ -11,6 +11,7 @@
     border-radius: 5px;
     font-weight: 600;
 }
+
 .outline-btn {
     background-color: #ffffff;
     color: #1d43d8;
@@ -18,11 +19,14 @@
     border-radius: 5px;
     font-weight: 600;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.speaker-up h1, .pricing-up h1{
+
+.speaker-up h1,
+.pricing-up h1 {
     font-weight: 800;
     font-size: 3rem;
 }
@@ -51,28 +55,25 @@ nav {
 }
 
 /* Hero Section start */
-.hero-section {
-    background-image: url("../assets/banner.jpg");
-    height: 100vh;
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/banner.jpg");
+    height: 90vh;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
-.hero {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 150px;
-    align-items: center;
-}
-
 .hero-up {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    text-align: center;
     color: #ffffff;
 }
 
@@ -80,39 +81,41 @@ nav {
     font-weight: 900;
     font-size: 3.5rem;
 }
-
-.hero-up p {
-    padding: 10px 200px;
-    text-align: justify;
+.hero-up p{
+    padding: 0 20%;
 }
-
 .hero-down button {
-    margin-top: 500px;
-    padding: 20px 50px;
+    width: 27%;
+    margin-left: 40%;
+    padding: 10px 35px;
     font-weight: 400;
     font-size: 1.5rem;
-    border-radius: 20px;
+    border-radius: 15px;
 }
+
 /* hero section end */
 
 /* speaker section start */
-.speaker-section{
+.speaker-section {
     padding-bottom: 80px;
 }
-.speaker-up{
+
+.speaker-up {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
 }
-.speaker-down{
+
+.speaker-down {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     grid-template-rows: repeat(2, 1fr);
     padding-top: 20px;
 }
-.speaker{
+
+.speaker {
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -120,17 +123,20 @@ nav {
     align-items: start;
     gap: 10px;
 }
-.speaker img{
+
+.speaker img {
     border-radius: 15px 15px 0px 0px;
 }
-.speaker small{
+
+.speaker small {
     color: #2563EB;
     text-transform: uppercase;
 }
+
 /* speaker section end */
 
 /* pricing section start */
-.pricing-up{
+.pricing-up {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,41 +145,48 @@ nav {
 }
 
 
-.pricing-down{
+.pricing-down {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding-bottom: 80px;
 }
-.price-card{
+
+.price-card {
     border: 1px solid burlywood;
     border-radius: 15px;
     padding: 20px;
 }
-.price-card button{
+
+.price-card button {
     margin-left: 25px;
     padding: 10px 70px;
 }
+
 .price-card-2 {
     background-color: #0D1B2A;
     color: #ffffff;
 }
-#pro-id{
+
+#pro-id {
     color: #93C5FD;
 }
-.price-card h1{
+
+.price-card h1 {
     font-weight: 900;
     font-size: 2.5rem;
 }
+
 /* pricing section end */
 
 /* footer section start */
-footer{
+footer {
     background-color: #0D1B2A;
     color: #ffffff;
     padding: 10px 0;
 }
-.footer-up{
+
+.footer-up {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,61 +196,61 @@ footer{
         FAQ SECTION
 ========================= */
 
-.faq-section{
-    padding:90px 8%;
-    background:#f8f9fc;
+.faq-section {
+    padding: 90px 8%;
+    background: #f8f9fc;
 }
 
-.faq-container{
-    max-width:1200px;
-    margin:auto;
+.faq-container {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.faq-heading{
-    text-align:center;
-    margin-bottom:60px;
+.faq-heading {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
-.faq-heading h2{
-    font-size:52px;
-    font-weight:700;
-    color:#111827;
-    margin-bottom:12px;
+.faq-heading h2 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
 }
 
-.faq-heading p{
-    font-size:18px;
-    color:#6b7280;
+.faq-heading p {
+    font-size: 18px;
+    color: #6b7280;
 }
 
-.faq-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
 }
 
-.faq-card{
-    background:#fff;
-    padding:30px;
-    border:1px solid #e5e7eb;
-    border-radius:15px;
-    transition:.3s;
+.faq-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    transition: .3s;
 }
 
-.faq-card:hover{
-    transform:translateY(-8px);
-    border-color:#2f57ff;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+.faq-card:hover {
+    transform: translateY(-8px);
+    border-color: #2f57ff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
 }
 
-.faq-card h3{
-    font-size:22px;
-    margin-bottom:15px;
-    color:#111827;
+.faq-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #111827;
 }
 
-.faq-card p{
-    font-size:16px;
-    line-height:1.8;
-    color:#4b5563;
+.faq-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4b5563;
 }
